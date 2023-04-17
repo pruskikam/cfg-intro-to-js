@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	background-color: hsl(176, 96%, 9%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movieNight {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 30vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+	width: 300px;
+	height: 300px;
+	margin: 10px 10px 10px 10px;
+	position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.film {
+	background-color: rgb(65, 26, 83);
 }
 
-.App-link {
-  color: #61dafb;
+.snack {
+	background-color: rgb(207, 57, 102);
+}
+.drink {
+	background-color: rgb(103, 57, 129);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	border-radius: 10px;
+	transform: translate(10%, 10%);
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	color: whitesmoke;
 }
+
+button.whatFilm {
+	background-color: rgb(53, 22, 67);
+}
+
+button.whatSnack {
+	background-color: rgb(187, 52, 93);
+}
+
+button.whatDrink {
+	background-color: rgb(73, 41, 92);
+}
+
